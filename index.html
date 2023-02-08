@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - How about a drink!?">
+		<meta name="keywords" content="happy hour, drink, beers">
+
+		<title>Happy Hour</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+			var car = new Array("Porsche", "Ferrari", "Tesla" , "Tate");
+
+			var randomCar = Math.floor(Math.random() * car.length);
+
+			var carImage = new Array("Porsche.jfif" , "Ferrari.jpg", "Tesla.jpg" , "Tate.jpg");
+
+
+			name = prompt("Enter your name and check your car name?");
+			if (name == "Tauqir") {
+				document.write("<h1><strong>" + name + " " + car[randomCar] + "! </strong></h1>");
+			    document.write("<img src=\"images/" + carImage[randomCar] +"\">");
+			}
+
+			else if (name == "Chris"){
+				document.write("<h1><strong>" + "Hello " + name + "! this is " + car[randomCar] + " </strong></h1>");
+				document.write("<img src=\"images/" + carImage[randomCar] +"\">" )
+			}
+			else {
+				document.write("<h1>" + "Brokie! Do some pushups now</h1>");
+				document.write("<img src=\"images/"+ carImage[3] + "\">");
+			}
+
+
+		
+		</script>
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+	</body>
+</html>
